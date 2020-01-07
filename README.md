@@ -1,0 +1,1 @@
+# smogomierz-to-domoticz
