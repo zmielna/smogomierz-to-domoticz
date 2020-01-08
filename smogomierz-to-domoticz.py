@@ -17,6 +17,7 @@ domoticzurl_thb   = 'http://%s/json.htm?type=command&param=udevice&idx=66&nvalue
 domoticzurl_pm25   = 'http://%s/json.htm?type=command&param=udevice&idx=72&nvalue=0&svalue=%s' % (domoticzurl, responseDictionary["pm25"])
 domoticzurl_pm10   = 'http://%s/json.htm?type=command&param=udevice&idx=73&nvalue=0&svalue=%s' % (domoticzurl, responseDictionary["pm10"])
 
-urllib.request.urlopen(domoticzurl_thb)
-urllib.request.urlopen(domoticzurl_pm25)
-urllib.request.urlopen(domoticzurl_pm10)
+urls = [domoticzurl_thb, domoticzurl_pm25, domoticzurl_pm10]
+for url in urls:
+    print(url)
+    urllib.request.urlopen(url)
