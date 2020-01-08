@@ -19,5 +19,4 @@ domoticzurl_pm10   = 'http://%s/json.htm?type=command&param=udevice&idx=73&nvalu
 
 urls = [domoticzurl_thb, domoticzurl_pm25, domoticzurl_pm10]
 for url in urls:
-    print(url)
     urllib.request.urlopen(url)
