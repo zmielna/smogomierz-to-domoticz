@@ -2,9 +2,8 @@
 
 
 ## Intro 
-Simple script to pull Smog and other data from Smogomierz to Domoticz. 
-
-In this particular case, Raspberry driven Domoticz
+Simple script to pull Smog and other metrics from Smogomierz to Domoticz. 
+In this particular case, it's Raspberry driven Domoticz
 
 ## Relevant Project websites
 
@@ -42,3 +41,8 @@ or add this as a system cronjob
 echo "*/5 * * * * root /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py | logger" > /etc/cron.d/smogomierz-to-domoticz
 
 ```
+
+
+## Thanks
+
+Big thanks to @bfaliszek and @hackerspace-silesia and Domoticz crew for all the hard work they put into their projects.
