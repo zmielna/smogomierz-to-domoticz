@@ -45,4 +45,4 @@ echo "*/5 * * * * root /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py
 
 ## Thanks
 
-Big thanks to @bfaliszek and @hackerspace-silesia and Domoticz crew for all the hard work they put into their projects.
+Big thanks to @github/bfaliszek and @github/hackerspace-silesia and Domoticz crew for all the hard work they put into their projects.
