@@ -21,10 +21,10 @@ cd /home/pi
 git clone https://github.com/zmielna/smogomierz-to-domoticz.git
 ```
 
-2. Change IP addresses of Smogomierz and Domoticz
+2. Change IP addresses of Smogomierz and Domoticz to match yours
 
 ```
-vim https://github.com/zmielna/smogomierz-to-domoticz.git
+vim /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py
 ```
 
 3. Create Domoticz Dummy Hardware (Setup/Hardware)
