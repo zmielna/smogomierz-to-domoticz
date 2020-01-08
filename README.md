@@ -36,7 +36,7 @@ vim /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py
   * Smogomierz PM2.5 (Type General, Subtype Custom Sensor)
   * Smogomierz PM10  (Type General, Subtype Custom Sensor)
 
-5. Take a note of your devices IDX numbers and adjust `smogomierz-to-domoticz.py` idx values respectively, in lines 11 to 13.
+5. Take a note of your Domoticz devices IDX numbers and adjust `smogomierz-to-domoticz.py` idx= values respectively, lines 16 to 18.
 
 6. Finally add cronjob triggered Python script that will fetch data from Smogomierz and push into Domoticz
 
