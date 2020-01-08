@@ -16,18 +16,29 @@ https://www.domoticz.com/wiki/Raspberry_Pi
 
 1. Clone code
 
+```
+cd /home/pi
+git clone https://github.com/zmielna/smogomierz-to-domoticz.git
+```
+
 2. Change IP addresses of Smogomierz and Domoticz
 
-3. Create Domoticz Dummy Hardware
+```
+vim https://github.com/zmielna/smogomierz-to-domoticz.git
+```
 
-4. Create three Domoticz Virtual Sensor Devices
+3. Create Domoticz Dummy Hardware (Setup/Hardware)
+
+
+4. Create three Domoticz Virtual Sensor Devices (Setup/Hardware/Create Virtual Sensors)
+
   * Smogomierz T/H/B (Type General, Subtype Temp + Humidity + Baro)
   * Smogomierz PM2.5 (Type General, Subtype Custom Sensor)
   * Smogomierz PM10  (Type General, Subtype Custom Sensor)
 
-Take a note of your devices IDX numbers and adjust `smogomierz-to-domoticz.py` code respectively
+5. Take a note of your devices IDX numbers and adjust `smogomierz-to-domoticz.py` idx values respectively, in lines 11 to 13.
 
-5. Add cronjob 
+6. Finally add cronjob triggered Python script that will fetch data from Smogomierz and push into Domoticz
 
 Either `crontab -e` for pi user
 
