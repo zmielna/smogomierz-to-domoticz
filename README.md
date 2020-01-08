@@ -6,7 +6,7 @@ Simple script to pull Smog and other data from Smogomierz to Domoticz.
 
 In this particular case, Raspberry driven Domoticz
 
-## Project websites
+## Relevant Project websites
 
 https://github.com/hackerspace-silesia/Smogomierz
 
@@ -30,14 +30,15 @@ Take a note of your devices IDX numbers and adjust `smogomierz-to-domoticz.py` c
 
 5. Add cronjob 
 
+Either `crontab -e` for pi user
 
 ```
 */5 * * * * /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py | logger
 ```
 
-For example
+or add this as a system cronjob
 
 ```
-echo "*/5 * * * * /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py | logger" > /etc/cron.d/smogomierz-to-domoticz
+echo "*/5 * * * * root /home/pi/smogomierz-to-domoticz/smogomierz-to-domoticz.py | logger" > /etc/cron.d/smogomierz-to-domoticz
 
 ```
